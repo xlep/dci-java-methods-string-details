@@ -1,20 +1,20 @@
 import java.util.Scanner;
 
-public class StringDetails {
+public class Solution {
 
   public static void main(String[] args) {
-    StringDetails stringDetails = new StringDetails();
+    Solution solution = new Solution();
     Scanner scanner = new Scanner(System.in);
 
-    String input = stringDetails.queryInput(scanner);
-    stringDetails.inputLength(input);
+    String input = solution.queryInput(scanner);
+    solution.inputLength(input);
 
-    stringDetails.wordCount(input);
-    String lettersToHide = stringDetails.queryLettersToHide(scanner);
-    stringDetails.hideLetters(input, lettersToHide);
+    solution.wordCount(input);
+    String lettersToHide = solution.queryLettersToHide(scanner);
+    solution.hideLetters(input, lettersToHide);
 
-    String newSentence = stringDetails.addSentence(scanner);
-    stringDetails.hideLetters(input + newSentence, lettersToHide);
+    String newSentence = solution.addSentence(scanner);
+    solution.hideLetters(input + newSentence, lettersToHide);
   }
 
   // Basics: scan input
